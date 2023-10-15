@@ -8,6 +8,11 @@ class Course
     {
         $this->cid = $cid;
     }
+
+    public function courseMethod()
+    {
+        echo "course method executed" . PHP_EOL;
+    }
 }
 
 class Lesson extends Course
@@ -19,25 +24,12 @@ class Lesson extends Course
         $this->lid = $course->cid;
     }
 
-    public function showLessons(): void
+    public function lessonMethod(): void
     {
-        echo 'Here are some lessons'. PHP_EOL;
+        echo 'Lesson method executed'. PHP_EOL;
     }
 }
 
-class Quiz extends Course
-{
-    public $qid;
-    public function __construct($qid)
-    {
-        $this->qid = $qid;
-    }
-
-    public function showquiz(): void
-    {
-        echo 'Here are some quiz'. PHP_EOL;
-    }
-}
 
 
 $course = new Course(10);
