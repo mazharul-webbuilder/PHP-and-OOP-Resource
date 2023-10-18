@@ -20,6 +20,6 @@ class Circle
     }
 }
 
-$circle1 = new Circle(10.25);
+$circle1 = new Circle(5);
 echo $circle1->getArea() . PHP_EOL;
 echo $circle1->getCircumference() . PHP_EOL;
