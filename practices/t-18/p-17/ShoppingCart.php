@@ -3,11 +3,9 @@
 class ShoppingCart
 {
     protected array $items;
-    protected float $total;
     public function __construct()
     {
         $this->items = [];
-        $this->total = 0;
     }
 
     public function addToCart(int $qty, float $price): void
@@ -17,11 +15,11 @@ class ShoppingCart
 
     public function getTotalCost(): float
     {
+        $total = 0;
         foreach ($this->items as $qty => $price) {
-            $this->total  += ($qty * $price);
+            $total  += ($qty * $price);
         }
-        print_r($this->items);
-        return $this->total;
+        return $total;
     }
 
 
