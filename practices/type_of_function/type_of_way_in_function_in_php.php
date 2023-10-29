@@ -40,6 +40,17 @@ foreach (getNumbers() as $number) {
     echo $number . PHP_EOL;
 }
 /*------------------------------------------------------------*/
+function countTo5()
+{
+    yield from [1, 2, 3, 4];
+    yield 5;
+    yield 6;
+}
+echo PHP_EOL. PHP_EOL;
+foreach (countTo5() as $value) {
+    echo $value . PHP_EOL;
+}
+/*------------------------------------------------------------*/
 //Magic Methods (For Classes):
 //In object-oriented PHP, you can define magic methods like __construct, __toString, and __get within classes.
 
