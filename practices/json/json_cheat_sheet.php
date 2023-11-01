@@ -58,9 +58,40 @@ print_r($decode_person);
 
 /*-----------------------------------------------------------------------------*/
 
-
 //json_last_error(): Returns the last JSON parsing error code.
-//json_last_error_msg(): Returns the last JSON parsing error message.
+
+
+/**
+ * In PHP, the json_last_error function is used to retrieve the last error that occurred during a JSON encoding or decoding operation using json_encode or json_decode. It returns an error code that can help you identify and handle errors related to JSON operations.
+ * The json_last_error function has no parameters, and you can use it after calling json_encode or json_decode to check for any errors that might have occurred during these operations.\
+ *
+ * Here are some common error codes that json_last_error can return:
+ *
+ * JSON_ERROR_NONE (0): No error occurred.
+ * JSON_ERROR_DEPTH (1): The maximum stack depth was exceeded.
+ * JSON_ERROR_STATE_MISMATCH (2): Invalid or malformed JSON.
+ * JSON_ERROR_CTRL_CHAR (3): Control character error, possibly due to an improperly encoded JSON string.
+ * JSON_ERROR_SYNTAX (4): Syntax error in the JSON string.
+ * JSON_ERROR_UTF8 (5): Malformed UTF-8 characters, possibly due to invalid Unicode sequences in the JSON string.
+ * JSON_ERROR_RECURSION (6): Recursion detected in the JSON data.
+ * JSON_ERROR_INF_OR_NAN (7): Inf or NaN values in the JSON string are not allowed.
+ * JSON_ERROR_UNSUPPORTED_TYPE (8): A value of an unsupported type was found in the JSON string.
+*/
+
+$jsonString = '{"name":"John Doe","age":30,"is_student":false}';
+$data = json_decode($jsonString);
+
+if (json_last_error() === JSON_ERROR_NONE) {
+    // JSON decoding was successful
+    var_dump($data);
+} else {
+    // Handle the error
+    echo "JSON decoding error: " . json_last_error_msg(); //json_last_error_msg(): Returns the last JSON parsing error message.
+}
+
+/*-----------------------------------------------------------------------------*/
+
+
 //Error Handling:
 //
 //json_last_error(): Returns the last JSON error that occurred.
