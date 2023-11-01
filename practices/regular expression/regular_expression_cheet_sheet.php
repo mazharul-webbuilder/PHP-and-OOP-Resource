@@ -13,7 +13,13 @@ $subject = "Visit W3Schools";
 echo preg_match($pattern, $subject) . PHP_EOL;
 
 /*-------------------------------------------------------------------*/
-//preg_match_all($pattern, $subject, &$matches, $flags = PREG_PATTERN_ORDER, $offset = 0): Performs a global regular expression match and stores all matches in a 2D array.
+
+// Performs a global regular expression match and stores all matches in a 2D array.
+
+preg_match_all($pattern, $subject, &$matches, $flags = PREG_PATTERN_ORDER, $offset = 0);
+
+
+/*-------------------------------------------------------------------*/
 //preg_replace($pattern, $replacement, $subject, $limit = -1, &$count = null): Performs a regular expression search and replace and returns the modified string.
 //preg_replace_callback($pattern, $callback, $subject, $limit = -1, &$count = null): Performs a regular expression search and replace using a callback function.
 //preg_filter($pattern, $replacement, $subject, $limit = -1, &$count = null): Performs a regular expression search and replace and returns the modified string without affecting the original subject.
