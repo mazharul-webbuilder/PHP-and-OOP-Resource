@@ -55,11 +55,52 @@ $multi_dimentional_array_persons = [
         ],
 ];
 
+/*--------*/
+
+//object: Represents instances of classes.
+
+class Hello {
+
+}
+
+$object = new Hello();
 
 /*--------------------------------------------------------------------------------------*/
 
-//object: Represents instances of classes.
 //callable: Represents a callback to a function or method.
+
+// Define a class with a method
+
+// Define a function that takes a callable as a parameter
+function executeCallback(callable $callback) {
+    // Call the provided callback
+    $result = $callback();
+    echo "Result: $result\n";
+}
+
+// Define a simple function
+function add($a, $b) {
+    return $a + $b;
+}
+
+class Math {
+    public function multiply($a, $b) {
+        return $a * $b;
+    }
+}
+
+// Usage of the executeCallback function with different callbacks
+executeCallback('add'); // Using a function name as a string
+executeCallback([new Math(), 'multiply']); // Using an instance and method name
+executeCallback(fn () => 10 * 5); // Using an anonymous function
+
+// You can also store a callback in a variable
+$callback = 'add';
+executeCallback($callback);
+
+
+/*--------------------------------------------------------------------------------------*/
+
 //iterable: Represents any data structure that can be iterated (e.g., arrays and objects implementing the Iterator interface).
 //Special Types:
 //
@@ -70,13 +111,3 @@ $multi_dimentional_array_persons = [
 //mixed: Represents a value that can have different data types.
 //void: Represents a function that does not return a value.
 //never: Represents a function that never returns (introduced in PHP 8.0).
-//It's important to note that PHP is a loosely typed language, meaning that you don't need to explicitly declare the data type of a variable. PHP will automatically determine the data type based on the context. However, you can explicitly specify data types for function parameters and return values in PHP 7.0 and later using type declarations.
-//
-//For example, in PHP 7.0 and later, you can declare a function like this:
-//
-//php
-//Copy code
-//function add(int $a, int $b): int {
-//return $a + $b;
-//}
-//In this example, the function add expects two integer arguments and returns an integer. If you pass values of the wrong data type, PHP will attempt to convert them if possible or throw a type error.
