@@ -18,13 +18,15 @@
 
 //Scalar Types:
 
-$number = 50;
+$number = 50; // support positive and negative  integer number
+
+$number = 50_000_000; // underscore is used for code readability for large integer, it will not affect integer value
 
 //int: Represents integers (whole numbers).
 
 /*--------*/
 
-$float_or_double = 50.0125;
+$float_or_double = 50.0125; // support positive and negative  number
 
 //float (or double): Represents floating-point numbers (numbers with decimal points).
 
