@@ -59,6 +59,8 @@ $bool = true;
 
 $indexed_array =  [1, 2, 'hello', 20.25, true, null];
 
+$indexed_array[] = 'i am new element added to indexed_array';
+
 $associative_array = [
         'name' => 'John',
     'email' => 'john@example.com',
