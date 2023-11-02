@@ -3,6 +3,18 @@
  * PHP supports several data types, which can be categorized into the following main groups:
 */
 /*--------------------------------------------------------------------------------------*/
+//PHP Has 9 Data Types
+// null
+// bool
+// int
+// float
+// string
+// array
+// object
+// callable
+// resource
+
+/*--------------------------------------------------------------------------------------*/
 
 //Scalar Types:
 
