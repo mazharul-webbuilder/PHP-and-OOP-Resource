@@ -1,3 +1,5 @@
+<?php
+
 PHP provides a comprehensive set of file management functions to work with files and directories. Here is a list of commonly used file management functions in PHP:
 
 File Operations:
