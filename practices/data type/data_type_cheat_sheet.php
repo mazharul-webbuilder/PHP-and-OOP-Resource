@@ -34,6 +34,15 @@ $float_or_double = 50.0125; // support positive and negative  number
 
 $string = "I am String";
 
+$firstName = 'Joh';
+$lastName = "{$firstName}n Doe". PHP_EOL; // {} allow to add any value immediately with variable like as we add n
+
+$get_position_1_character = $firstName[1]; //Output: 0
+
+$firstName[0] = 'Z';
+
+var_dump($firstName); // Output: Zoh
+
 //string: Represents sequences of characters.
 
 /*--------*/
