@@ -35,6 +35,18 @@ echo sum(1, 3,4,5) . PHP_EOL;
 
 //----------------------------------------------------//
 
+// Named Argument
+
+function add($a, $b): int|float
+{
+    return $a + $b;
+}
+
+echo add(a: 10, b: 5) . PHP_EOL; // Here used named argument
+
+
+//----------------------------------------------------//
+
 /*Predefined PHP_Constant Variable*/
 //like PHP_VERSION, PHP_EOL, PHP_INT_MAX, PHP_INT_MAX ........................
 
