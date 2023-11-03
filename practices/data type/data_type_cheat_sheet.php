@@ -90,7 +90,7 @@ class Hello {
 
 $object = new Hello();
 
-/*--------*/
+/*-----------------------------------------------------------------------*/
 
 //callable: Represents a callback to a function or method.
 
@@ -98,9 +98,13 @@ $object = new Hello();
 
 // Define a function that takes a callable as a parameter
 function executeCallback(callable $callback) {
-    // Call the provided callback
-    $result = $callback();
-    echo "Result: $result\n";
+    if (is_callable($callback)) {
+        // Call the provided callback
+        $result = $callback();
+        echo "Result: $result" . PHP_EOL;
+    } else {
+        echo "Callback is not callable." . PHP_EOL;
+    }
 }
 
 // Define a simple function
@@ -118,6 +122,7 @@ class Math {
 executeCallback('add'); // Using a function name as a string
 executeCallback([new Math(), 'multiply']); // Using an instance and method name
 executeCallback(fn () => 10 * 5); // Using an anonymous function
+
 
 // You can also store a callback in a variable
 $callback = 'add';
@@ -200,12 +205,12 @@ class HelloClass {
 /**
  * parent: The parent pseudo-type is used to indicate that a method should return an instance of the parent class.
 */
-class ParentClass {
-    public static function create(): parent
-    {
-        return new parent();
-    }
-}
+//class ParentClass {
+//    public static function create(): parent
+//    {
+//        return new parent();
+//    }
+//}
 
 /*--------*/
 
