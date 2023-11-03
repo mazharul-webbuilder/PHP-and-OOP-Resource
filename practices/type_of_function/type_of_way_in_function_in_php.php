@@ -10,18 +10,80 @@ function add($a, $b)
 {
     return $a + $b;
 }
+
+
 /*------------------------------------------------------------*/
 //Arrow Functions & Anonymous Functions (Closures):
-$y = 1;
 
-$fn1 = fn($x) => $x + $y;
 
-// equivalent to using $y by value:
-$fn2 = function ($x) use ($y) {
-    return $x + $y;
+/*-----------*/
+
+/*Anonymous Function*/
+
+//Example 1
+
+$multiply = function ($num)
+{
+    return $num * 2;
 };
 
-var_export($fn1(3));
+echo $multiply(7). PHP_EOL; // have to use $multiply() to call this function
+
+
+
+//Example 2
+
+$multiply = function ($num)
+{
+    return $num * 2;
+};
+
+/*Allow assign the function again*/
+$multiply = function ($num)
+{
+    return $num * 3;
+};
+
+echo $multiply(7). PHP_EOL; // have to use $multiply() to call this function
+
+
+
+//Example 3  /*Anonymous with callback function*/
+
+$multiplyer = 2;
+
+$multiply = function ($num) use($multiplyer) {
+//    $multiplyer = 5; // this will work
+  return $num * $multiplyer;
+};
+
+function sum($a, $b, $callback) // callback function will be executed after the a + b return;
+{
+    return $callback($a + $b); // Here after sum $a + $b, $callback function will call in this case multiply($num)
+}
+
+echo sum(5, 5, $multiply). PHP_EOL; // Output: 20
+
+
+
+
+
+/*-----------*/
+
+
+/*Shorter way to write anonymous function we called it Arrow Function*/
+
+//Example:
+$multiply = fn($num) => $multiplyer * $num;
+
+// Above code is equivalent to the below code
+
+$multiply = function ($num) use($multiplyer) {
+//    $multiplyer = 5; // this will work
+    return $num * $multiplyer;
+};
+
+
 /*------------------------------------------------------------*/
 
 //Dynamic Function Names (Variable Functions):
