@@ -17,6 +17,22 @@ $messasge = match ($paymentStatus){
 };
 
 var_dump($messasge); // output: success
+
+
+//----------------------------------------------------//
+
+// Variadic Functions
+
+function sum(int|float ...$nums): int|float // will accept n number of parameters
+{
+    //$nums variable will contain as array
+
+    return array_sum($nums);
+}
+
+echo sum(1, 3,4,5) . PHP_EOL;
+
+
 //----------------------------------------------------//
 
 /*Predefined PHP_Constant Variable*/
