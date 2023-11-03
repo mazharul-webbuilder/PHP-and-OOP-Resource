@@ -29,6 +29,10 @@ var_dump($messasge); // output: success
 
 define('FOO', 'Hello World');
 
+if (defined(FOO)){
+    echo true;
+}
+
 echo FOO . PHP_EOL;
 
 
