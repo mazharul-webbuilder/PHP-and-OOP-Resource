@@ -104,8 +104,6 @@ if (file_exists('example.txt')) {
 
 //File Operations:
 //
-//file_get_contents($filename, $use_include_path = false, $context = null, $offset = 0, $maxlen = null): Reads the entire content of a file into a string.
-//file_put_contents($filename, $data, $flags = 0, $context = null): Writes data to a file.
 //fopen($filename, $mode, $use_include_path = false, $context = null): Opens a file or URL.
 //fclose($handle): Closes an open file pointer.
 //fwrite($handle, $string, $length = null): Writes to an open file.
@@ -136,7 +134,6 @@ if (file_exists('example.txt')) {
 //readdir($dir_handle): Reads entry from directory handle.
 //rewinddir($dir_handle): Rewinds directory handle.
 //closedir($dir_handle): Closes directory handle.
-//scandir($directory, $sorting_order = SCANDIR_SORT_ASCENDING, $context = null): Lists files and directories in a directory.
 //chdir($directory): Changes the current directory.
 //getcwd(): Gets the current working directory.
 //These file and directory management functions in PHP allow you to perform various operations, such as reading, writing, copying, deleting files, and working with directories. Be sure to refer to the official PHP documentation for detailed information on these functions and any new additions or changes in the PHP version you're using.
