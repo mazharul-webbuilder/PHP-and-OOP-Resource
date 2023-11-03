@@ -81,3 +81,38 @@ echo __NAMESPACE__ . PHP_EOL; // This constant returns the current namespace.
 //echo __COMPILER_HALT_OFFSET__ . PHP_EOL; // It is used in conjunction with the __halt_compiler() directive to determine the offset for the __HALT_COMPILER() marker within the script.
 
 //----------------------------------------------------//
+
+
+/**
+ * Value Passed by Reference or Pass by Value in a function parameter
+*/
+//Rule 1: if $x = 0, if $x passed in a fun param it call pass by value, if inside function value of $x change main $x will be not change
+//Rule 2: if $x = 0, if $x passed in a fun param it call pass by reference, if inside function value of $x change main $x will  change
+
+
+//Example 1: Passed by value
+
+$cup = 'empty';
+function fillCup($cupParam)
+{
+    $cupParam = 'filled';
+}
+echo fillCup($cup) . PHP_EOL;
+
+echo $cup . PHP_EOL;
+
+
+//Example 1: Passed by references
+
+$cup2 = 'empty';
+function fillCup2(&$cupParam)
+{
+    $cupParam = 'filled';
+}
+echo fillCup2($cup) . PHP_EOL;
+
+echo $cup . PHP_EOL;
+
+
+
+//----------------------------------------------------//
