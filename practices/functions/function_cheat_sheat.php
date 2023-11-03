@@ -36,3 +36,13 @@ $names = array_values($names); // Will reindex the rest of the array
 
 /*--------------------------------------------------------------------------------------*/
 
+/*sleep() function, used for delay*/
+
+//Example: 1
+if (true) {
+    sleep(2); // will wait 2 sec before executing next line
+
+    echo "hello, I wake" . PHP_EOL;
+}
+/*--------------------------------------------------------------------------------------*/
+
