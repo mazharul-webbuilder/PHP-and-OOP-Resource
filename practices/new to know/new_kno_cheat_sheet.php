@@ -19,8 +19,17 @@ $messasge = match ($paymentStatus){
 var_dump($messasge); // output: success
 //----------------------------------------------------//
 
-/*Predefined PHP_Contant Variable*/
+/*Predefined PHP_Constant Variable*/
 //like PHP_VERSION, PHP_EOL, PHP_INT_MAX, PHP_INT_MAX ........................
+
+
+//----------------------------------------------------//
+
+/*Alternative Syntax To creating Constant*/
+
+define('FOO', 'Hello World');
+
+echo FOO . PHP_EOL;
 
 
 //----------------------------------------------------//
