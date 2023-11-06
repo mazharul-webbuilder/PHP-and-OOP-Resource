@@ -116,3 +116,35 @@ echo $cup . PHP_EOL;
 
 
 //----------------------------------------------------//
+
+/*Readonly Property*/
+
+//In PHP 8.1
+/**
+ * // Note: If you declare a property readonly
+ * you must have to add property type like string, int , boll or whatever
+ * Otherwise it will trigger error
+*/
+class MyReadOnlyClass8_1
+{
+    public readonly string $name;
+    public readonly int $age;
+}
+
+//--------------
+
+
+/**
+ * In php 8.2 we can write as below
+ * if we declare class as readonly properties should not have to
+ * add extra readonly keyword
+ *
+ * Note: Data type must have to add
+*/
+readonly class MyReadOnlyClass8_2
+{
+    public string $name;
+    public int $age;
+}
+
+//----------------------------------------------------//
