@@ -67,4 +67,14 @@ $letters = range('A', 'Z');
 
 /*--------------------------------------------------------------------------------------*/
 
+//is_null() check is a value contain value if yes return yes | this function return type is bool
+
+$has_value = '';
+if (is_null($has_value)) {
+    $has_value = 'Hello';
+}
+
+
+/*--------------------------------------------------------------------------------------*/
+
 
