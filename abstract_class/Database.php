@@ -38,5 +38,6 @@ class DBconnection extends Database
     }
 }
 
+
 $dbConnection = new DBconnection("What is the Status", true);
 $dbConnection->setConnection(false)->getConnection(); // Here method changing Used
