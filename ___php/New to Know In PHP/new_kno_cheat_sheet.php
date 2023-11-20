@@ -148,3 +148,47 @@ readonly class MyReadOnlyClass8_2
 }
 
 //----------------------------------------------------//
+
+/**
+ * Anonymous Class
+ *
+ * An anonymous class in PHP is a class without a name.
+ * Instead of defining a class with the class keyword and providing a name, you create an instance of a class on the fly,
+ * usually for a specific, one-time use.
+ * Anonymous classes are defined using the new class syntax.
+*/
+
+//Example 1
+
+$object = new class {
+  public string $variable;
+  public function demoMethod(): string
+  {
+      return "hello";
+  }
+};
+$value = $object->demoMethod();
+
+//Example 2
+interface InterfaceForAnonymousClass{
+    public function mustImplement();
+}
+
+$anonymousObject = new class implements InterfaceForAnonymousClass{
+    public function mustImplement()
+    {
+        // TODO: Implement mustImplement() method.
+    }
+};
+
+//Example 3
+function createObject(): object
+{
+    return new class{
+
+    };
+}
+
+$object = createObject();
+
+//----------------------------------------------------//
