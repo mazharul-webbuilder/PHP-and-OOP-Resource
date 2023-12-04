@@ -192,3 +192,13 @@ function createObject(): object
 $object = createObject();
 
 //----------------------------------------------------//
+// in php 8.3
+//Typed class constants
+//You can now typehint class constants:
+
+class Foo
+{
+    const string BAR = 'baz';
+}
+//----------------------------------------------------//
+
