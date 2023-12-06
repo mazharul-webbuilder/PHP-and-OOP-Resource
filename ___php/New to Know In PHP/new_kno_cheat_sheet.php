@@ -202,3 +202,20 @@ class Foo
 }
 //----------------------------------------------------//
 
+// Dynamic Class constant fetch
+
+class DynamicConstantClass
+{
+    const PHP = "8.3";
+}
+
+$searchableConstant = 'PHP';
+
+$result = DynamicConstantClass::{$searchableConstant};
+
+var_dump($result);
+
+
+//----------------------------------------------------//
+
+
