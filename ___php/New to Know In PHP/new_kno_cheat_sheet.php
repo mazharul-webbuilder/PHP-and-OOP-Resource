@@ -218,4 +218,28 @@ var_dump($result);
 
 //----------------------------------------------------//
 
+// Deep Cloning of readonly properties
+
+class PHP
+{
+    public string $version = '8.3';
+}
+readonly class ReadOnlyClass
+{
+    public function __construct(public PHP $php){}
+    public function __clone(): void
+    {
+        $this->php = clone $this->php;
+    }
+}
+
+$instance = new ReadOnlyClass(new PHP());
+
+$cloned = clone $instance;
+
+$temp = $cloned->php->version;
+
+//----------------------------------------------------//
+
+
 
