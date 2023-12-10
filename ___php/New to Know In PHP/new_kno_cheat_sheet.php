@@ -216,7 +216,7 @@ $result = DynamicConstantClass::{$searchableConstant};
 var_dump($result);
 
 
-//----------------------------------------------------//
+//-------------------------------------------------------//
 
 // Deep Cloning of readonly properties
 
