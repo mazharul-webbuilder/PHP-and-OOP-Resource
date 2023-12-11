@@ -24,5 +24,6 @@ class Rectangle
 }
 
 $myfirstReactangle = new Rectangle(10, 10.20);
+
 echo $myfirstReactangle->getArea() . PHP_EOL;
 echo $myfirstReactangle->getPerimeter() . PHP_EOL;
