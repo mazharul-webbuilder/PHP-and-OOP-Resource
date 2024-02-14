@@ -240,6 +240,30 @@ $cloned = clone $instance;
 $temp = $cloned->php->version;
 
 //----------------------------------------------------//
+/**
+* #[Override] keyword
+* This Override feature intruduce in PHP 8.3, 
+* If parent class change a method name that is override by child class, child class doesn't have know the parent method name changed,
+* With the #[Override] keyword, php will through an error
+*/
+abstract class Parent
+{
+    public function methodWithDefaultImplementation(): int
+    {
+        return 1;
+    }
+}
+
+final class Child extends Parent
+{
+    #[Override]
+    public function methodWithDefaultImplementation(): int
+    {
+        return 2; // The overridden method
+    }
+}
+//----------------------------------------------------//
+
 
 
 
