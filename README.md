@@ -1,1 +1,1 @@
-<h2>PHP & OOP Resource</h2>
+<h2>PHP & OOP Resources</h2>
