@@ -5,7 +5,8 @@
 // Key Features:
 
 // 1) **PHP/FI (Personal Home Page / Forms Interpreter)**
-//    * PHP 1.x was initially named "Personal Home Page" and was used to handle forms and create dynamic web pages. It was designed by Rasmus Lerdorf to track visitors to his online resume.
+//    * PHP 1.x was initially named "Personal Home Page" and was used to handle forms and create dynamic web pages.
+//       It was designed by Rasmus Lerdorf to track visitors to his online resume.
 echo "PHP 1.x, initially PHP/FI, was focused on form processing and dynamic web content generation.";
 
 // 2) **Basic Scripting for Web Development**
@@ -39,6 +40,7 @@ fclose($file);
 </body>
 </html>
 
+<?php
 // 5) **No Advanced Functions**
 //    * PHP 1.x had limited functionality compared to later versions, but allowed developers to output dynamic content using basic commands and form handling.
 echo "Welcome to my website";
@@ -62,11 +64,11 @@ fclose($file);
 
 // 🚀 PHP 1.x Features Summary:
 // Key features of PHP 1.x included:
-1. **PHP/FI (Forms Interpreter)** - The first version of PHP focused on forms and simple scripting capabilities.
-2. **Basic Server-Side Scripting** - Developers could use PHP to create dynamic content by processing forms.
-3. **Limited Database Interaction** - Only basic file handling capabilities, with no support for databases like MySQL.
-4. **No Object-Oriented Programming (OOP)** - PHP 1.x did not have full object-oriented capabilities.
-5. **Embedded PHP in HTML** - Developers could mix PHP code directly with HTML, which was revolutionary at the time.
-6. **Very Limited Functions** - PHP 1.x provided only basic functions for dynamic web page creation.
+//1. **PHP/FI (Forms Interpreter)** - The first version of PHP focused on forms and simple scripting capabilities.
+//2. **Basic Server-Side Scripting** - Developers could use PHP to create dynamic content by processing forms.
+//3. **Limited Database Interaction** - Only basic file handling capabilities, with no support for databases like MySQL.
+//4. **No Object-Oriented Programming (OOP)** - PHP 1.x did not have full object-oriented capabilities.
+//5. **Embedded PHP in HTML** - Developers could mix PHP code directly with HTML, which was revolutionary at the time.
+//6. **Very Limited Functions** - PHP 1.x provided only basic functions for dynamic web page creation.
 
 ?>
