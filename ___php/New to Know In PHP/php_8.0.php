@@ -6,7 +6,10 @@
 
 // 1) Union Types
 //    * Accept multiple types for arguments.
-function printValue(int|float $value) {
+use JetBrains\PhpStorm\Deprecated;
+
+function printValue(int|float $value): void
+{
     echo $value;
 }
 
@@ -16,11 +19,12 @@ printValue(10.5); // Works!
 
 // 2) Named Arguments
 //    * Pass arguments by name.
-function displayInfo($name, $age) {
+function displayInfo($name, $age): void
+{
     echo "$name is $age years old";
 }
 
-displayInfo(age: 30, name: "John");
+displayInfo(name: "John", age: 30);
 
 
 
@@ -39,7 +43,8 @@ echo match($status) {
 // 4) Attributes
 //    * Add metadata to classes or methods.
 #[Deprecated]
-function oldFunction() {
+function oldFunction(): void
+{
     echo "This function is deprecated.";
 }
 

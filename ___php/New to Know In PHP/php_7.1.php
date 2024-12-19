@@ -5,7 +5,8 @@
 //1) Nullable Types
     //* Use ? to allow null for scalar type declarations.
 
-function setAge(?int $age) {
+function setAge(?int $age): ?int
+{
     return $age;
 }
 
@@ -15,7 +16,8 @@ echo setAge(null); // Outputs: nothing
 //2) Void Return Type
     //* Functions that do not return anything.
 
-function sayHello(): void {
+function sayHello(): void
+{
     echo "Hello World!";
 }
 

@@ -7,105 +7,86 @@
 //1)  Property Hooks
     //* Property hooks allow developers to define custom behavior when accessing or
     // modifying class properties. This feature provides greater control over property interactions, enabling more robust and encapsulated designs.
-class User {
-    private string $name;
+class Locale
+{
+    public string $languageCode;
 
-    public function __get($property) {
-        if ($property === 'name') {
-            // Custom logic for accessing 'name'
-            return $this->name;
+    public string $countryCode
+    {
+        set (string $countryCode) {
+            $this->countryCode = strtoupper($countryCode);
         }
-        throw new Exception("Undefined property: $property");
     }
 
-    public function __set($property, $value) {
-        if ($property === 'name') {
-            // Custom logic for setting 'name'
-            $this->name = $value;
-            return;
+   public string $combinedCode{
+        get => \sprintf("%s_%s", $this->languageCode, $this->countryCode);
+
+        set(string $value) {
+            [$this->languageCode, $this->countryCode] = explode('_', $value, 2);
         }
-        throw new Exception("Undefined property: $property");
     }
+
+    public function __construct(string $languageCode, string $countryCode)
+{
+    $this->languageCode = $languageCode;
+    $this->countryCode = $countryCode;
+}
 }
 
-$user = new User();
-$user->name = 'Alice';
-echo $user->name; // Outputs: Alice
+$brazilianPortuguese = new Locale('pt', 'br');
+var_dump($brazilianPortuguese->countryCode); // BR
+var_dump($brazilianPortuguese->combinedCode); // pt_BR
 
 
 
 //2)  Asymmetric Visibility
     //* Property hooks allow developers to define custom behavior when accessing or
     // Asymmetric visibility allows different access levels for property getters and setters, providing more granular control over property accessibility.
-class Account {
-    private float $balance = 0.0;
+class PhpVersion
+{
+    public private(set) string $version = '8.4';
 
-    public function getBalance(): float {
-        return $this->balance;
-    }
-
-    protected function setBalance(float $amount): void {
-        if ($amount >= 0) {
-            $this->balance = $amount;
-        } else {
-            throw new Exception("Balance cannot be negative");
-        }
+    public function increment(): void
+    {
+        [$major, $minor] = explode('.', $this->version);
+        $minor++;
+        $this->version = "{$major}.{$minor}";
     }
 }
 
-class SavingsAccount extends Account {
-    public function deposit(float $amount): void {
-        $this->setBalance($this->getBalance() + $amount);
+
+//3)  #[\Deprecated] Attribute
+    //* The new #[\Deprecated] attribute makes PHP’s existing deprecation mechanism available to user-defined functions, methods, and class constants.
+class PhpVersion
+{
+    #[\Deprecated(
+        message: "use PhpVersion::getVersion() instead",
+        since: "8.4",
+    )]
+    public function getPhpVersion(): string
+    {
+        return $this->getVersion();
+    }
+
+    public function getVersion(): string
+    {
+        return '8.4';
     }
 }
 
-$account = new SavingsAccount();
-$account->deposit(100.0);
-echo $account->getBalance(); // Outputs: 100
+$phpVersion = new PhpVersion();
+// Deprecated: Method PhpVersion::getPhpVersion() is deprecated since 8.4, use PhpVersion::getVersion() instead
+echo $phpVersion
 
 
-//3)   Chaining new Without Parentheses
-    //* PHP 8.4 allows method chaining directly on object instantiation without requiring additional parentheses, simplifying fluent interfaces.
-
-class Builder {
-    public function setName(string $name): self {
-        // Set the name
-        return $this;
-    }
-
-    public function build(): object {
-        // Build and return the object
+//4) new MyClass()->method() without parentheses
+    //* Properties and methods of a newly instantiated object can now be accessed without wrapping the new expression in parentheses.
+class PhpVersion
+{
+    public function getVersion(): string
+    {
+        return 'PHP 8.4';
     }
 }
 
-$object = new Builder->setName('Example')->build();
-
-
-//4) New Array Functions
-    // Several new array functions have been introduced to streamline common operations:
-    //
-    //array_find(): Finds the first element that satisfies a callback.
-    //array_find_key(): Finds the first key that satisfies a callback.
-    //array_any(): Checks if any array element satisfies a callback.
-    //array_all(): Checks if all array elements satisfy a callback.
-
-$array = [1, 2, 3, 4, 5];
-
-$firstEven = array_find($array, fn($value) => $value % 2 === 0);
-echo $firstEven; // Outputs: 2
-
-$allPositive = array_all($array, fn($value) => $value > 0);
-var_dump($allPositive); // Outputs: bool(true)
-
-
-$object = new Builder->setName('Example')->build();
-
-
-
-//5) HTML5 Support in DOM Extension
-    //* The DOM extension has been updated to fully support HTML5, improving the handling and manipulation of modern HTML documents.
-
-$dom = new DOMDocument();
-$dom->loadHTML('<!DOCTYPE html><html><body><p>Example</p></body></html>', LIBXML_HTML_NOIMPLIED | LIBXML_HTML_NODEFDTD);
-echo $dom->saveHTML();
-ct = new Builder->setName('Example')->build();
+var_dump(new PhpVersion()->getVersion());
