@@ -6,7 +6,7 @@
 
 // 1) Object Type Hinting
 //    * Type hint for object.
-function setObject(object $obj)
+function setObject(object $obj): string
 {
     return get_class($obj);
 }

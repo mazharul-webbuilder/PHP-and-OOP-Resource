@@ -125,14 +125,65 @@ class Example
 {
     public function factory(): self
     {
-        return new self();
+        return new self(); // Creates an instance of Example
     }
 
     public function parentFactory(): parent
     {
-        return new parent();
+        return new parent(); //❌ This will result in a fatal error. In PHP, parent is not a valid way to instantiate an object
     }
 }
+//NOTE: Correct use of use parent
+//Here’s how parent is typically used in PHP:
+//
+//Example 1: Calling a Parent Method
+class ParentClass
+{
+    public function greet()
+    {
+        return "Hello from ParentClass";
+    }
+}
+
+class ChildClass extends ParentClass
+{
+    public function greet(): string
+    {
+        return parent::greet() . " and ChildClass";
+    }
+}
+
+$child = new ChildClass();
+echo $child->greet();  // Outputs: Hello from ParentClass and ChildClass
+
+//Example 2: Calling a Parent Constructor
+class ParentClass
+{
+    protected string $message;
+
+    public function __construct(string $message)
+    {
+        $this->message = $message;
+    }
+}
+
+class ChildClass extends ParentClass
+{
+    public function __construct()
+    {
+        parent::__construct("Message from Parent");
+    }
+
+    public function getMessage()
+    {
+        return $this->message;
+    }
+}
+
+$child = new ChildClass();
+echo $child->getMessage();  // Outputs: Message from Parent
+
+
 
 // 11) `filter_var()` Returns False on Failure
 //    * The `filter_var()` function now returns `false` when validation fails instead of `0` or `null`.

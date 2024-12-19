@@ -14,7 +14,7 @@ $user = new User("John");
 echo $user->name;  // Outputs: John
 
 // Uncommenting the next line would result in an error, because the class is readonly:
-// $user->name = "Jane";  // Error: Cannot modify readonly property
+ $user->name = "Jane";  // Error: Cannot modify readonly property
 
 // Properties in a readonly class are automatically readonly without explicitly declaring them as `readonly`.
 

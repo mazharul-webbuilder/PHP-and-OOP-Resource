@@ -10,22 +10,23 @@ echo "Zend Engine 1.0 introduced with PHP 4";
 
 // 2) **Support for Object-Oriented Programming (OOP)**
 //    * PHP 4 introduced object-oriented programming features, but it lacked the full OOP support available in later versions (such as PHP 5).
-class User
+class User4
 {
     var $name;
 
-    function __construct($name) {
+    function __construct($name)
+    {
         $this->name = $name;
     }
 
-    function greet() {
+    function greet()
+    {
         echo "Hello, " . $this->name;
     }
 }
 
-$user = new User("Alice");
+$user = new User4("Alice");
 $user->greet();  // Outputs: Hello, Alice
-
 
 
 // 3) **Improved Session Management**
@@ -35,19 +36,16 @@ $_SESSION['user'] = 'Alice';
 echo $_SESSION['user'];  // Outputs: Alice
 
 
-
-// 4) **Introduction of Superglobals**
-//    * PHP 4 introduced superglobal arrays like `$_GET`, `$_POST`, `$_SESSION`, and `$_COOKIE` to make variable access more convenient.
+// 4) **Introduction of Super globals**
+//    * PHP 4 introduced super global arrays like `$_GET`, `$_POST`, `$_SESSION`, and `$_COOKIE` to make variable access more convenient.
 $_GET['name'] = 'John';
 echo $_GET['name'];  // Outputs: John
-
 
 
 // 5) **Improved File Handling Functions**
 //    * PHP 4 introduced new file handling functions, allowing more flexible file manipulations, including `file_get_contents()`.
 $file_content = file_get_contents('sample.txt');
 echo $file_content;  // Outputs content of sample.txt file
-
 
 
 // 6) **Improved XML Support with Expat**
@@ -58,7 +56,6 @@ xml_parse_into_struct($xml_parser, $xml, $values);
 xml_parser_free($xml_parser);
 
 echo $values[1]['value'];  // Outputs: PHP
-
 
 
 // 🚀 PHP 4.1 (Released: December 10, 2001)
@@ -72,7 +69,6 @@ $_SESSION['username'] = "John";
 echo $_SESSION['username'];  // Outputs: John
 
 
-
 // 🚀 PHP 4.2 (Released: April 22, 2002)
 
 // Key Features:
@@ -81,7 +77,6 @@ echo $_SESSION['username'];  // Outputs: John
 //    * PHP 4.2 improved error handling, introducing better logging and debugging tools.
 error_reporting(E_ALL); // Displays all errors
 echo $undefined_variable;  // Warning: Undefined variable
-
 
 
 // 🚀 PHP 4.3 (Released: December 27, 2002)
@@ -105,7 +100,6 @@ while ($row = mysql_fetch_assoc($result)) {
 // 1) **Improved Performance and Bug Fixes**
 //    * PHP 4.4 was mostly a bug-fix release, addressing performance issues and various minor bug fixes.
 echo "PHP 4.4 released with improved performance";
-
 
 
 // 🚀 PHP 4.5 (Released: September 2005)

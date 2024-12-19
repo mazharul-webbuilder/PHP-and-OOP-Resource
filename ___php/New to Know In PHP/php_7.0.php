@@ -7,17 +7,19 @@
 
 declare(strict_types=1);
 
-function addNumbers(int $a, int $b): int {
-return $a + $b;
+function addNumbers(int $a, int $b): int
+{
+    return $a + $b;
 }
 
 echo addNumbers(5, 10); // Outputs: 15
 echo addNumbers(5, '10'); // Error in strict mode
 
 //2) Return Type Declarations
-    //* Specify the return type of a function.
+    //* Specify the return type of function.
 
-function getSum(float $a, float $b): float {
+function getSum(float $a, float $b): float
+{
     return $a + $b;
 }
 
@@ -44,7 +46,7 @@ echo 3 <=> 2; // Outputs: 1 (greater than)
     //* Inline class definition.
 
 $object = new class {
-    public function sayHello() : string
+    public function sayHello(): string
     {
         return "Hello from anonymous class!";
     }

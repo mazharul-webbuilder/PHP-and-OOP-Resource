@@ -21,7 +21,6 @@ $query = mysql_query('SELECT * FROM users');
 echo mysql_num_rows($query);  // Outputs number of rows in the users table
 
 
-
 // 🚀 PHP 3.1 (Released: 1999)
 
 // Key Features:
@@ -42,7 +41,6 @@ if (preg_match($pattern, $string)) {
 }
 
 
-
 // 🚀 PHP 3.2 (Released: 2000)
 
 // Key Features:
@@ -61,7 +59,6 @@ $text_color = imagecolorallocate($image, 0, 0, 0);
 imagestring($image, 5, 10, 10, "PHP", $text_color);
 imagepng($image, 'php_image.png');
 imagedestroy($image);  // Creates and saves an image with the text 'PHP'
-
 
 
 // 🚀 PHP 3.3 (Released: 2001)
@@ -87,7 +84,6 @@ echo "This content is buffered.";
 $content = ob_get_contents();
 ob_end_clean();
 echo $content;  // Outputs: This content is buffered.
-
 
 
 // 🚀 PHP 3.4 (Released: Early 2001)
