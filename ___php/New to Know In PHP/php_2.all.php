@@ -17,6 +17,7 @@ echo "PHP 2.x began as PHP/FI, designed to process forms and enable basic dynami
     <input type="text" name="username" placeholder="Enter your username">
     <input type="submit" value="Submit">
 </form>
+
 <?php
 // 3) **Database Integration (MySQL)**
 //    * PHP 2.x added support for interacting with MySQL databases, allowing the creation of dynamic, data-driven websites.
@@ -72,6 +73,7 @@ if ($number > 3) {
 </body>
 </html>
 
+<?php
 // 9) **Session Management (Basic Support)**
 //    * PHP 2.x introduced very rudimentary session management capabilities. Though basic, it laid the foundation for later session handling improvements in future versions.
 session_start();
@@ -81,24 +83,28 @@ echo $_SESSION['username'];  // Outputs: Alice
 // 10) **Limited Error Handling**
 //    * Error handling was minimal, and PHP 2.x lacked advanced exception handling features introduced in later versions.
 if (!mysql_connect('localhost', 'root', '')) {
-die("Could not connect to MySQL database.");  // Simple error handling
+    die("Could not connect to MySQL database.");  // Simple error handling
 }
 
 // 11) **Limited Object-Oriented Programming (OOP)**
 //    * PHP 2.x had some object-oriented programming capabilities, but it was limited and not as fully featured as later versions.
 //    * Object-oriented features became a major focus of PHP starting with PHP 3 and onward.
-class User {
-public $name;
-public function __construct($name) {
-$this->name = $name;
-}
+class User2
+{
+    public $name;
+
+    public function __construct($name)
+    {
+        $this->name = $name;
+    }
 }
 
-$user = new User("Alice");
+$user = new User2("Alice");
 echo $user->name;  // Outputs: Alice
 
 // 12) **Early Templating Systems (PHP 2.x)**
 //    * PHP 2.x allowed for rudimentary templating, enabling developers to create reusable templates with dynamic content.
+
 $template = "<h1>Hello, <?php echo \$user_name; ?></h1>";
 $user_name = "Alice";
 eval("?>$template");  // Outputs: Hello, Alice
@@ -112,18 +118,18 @@ eval("?>$template");  // Outputs: Hello, Alice
 </body>
 </html>
 
+
 // 🚀 PHP 2.0 to PHP 2.2 (1997-1998)
-
-// Key Features of PHP 2.x Series:
-1. **PHP/FI (Forms Interpreter)** - The initial release was primarily focused on form processing and server-side scripting for dynamic web pages.
-2. **Database Interaction (MySQL)** - Introduced support for connecting to MySQL databases, making it the first step towards creating data-driven websites.
-3. **Embedding PHP in HTML** - PHP 2.x allowed developers to embed PHP code within HTML, providing flexibility to build dynamic content on the fly.
-4. **Basic File Handling** - PHP 2.x included file handling capabilities to read and write data to files.
-5. **Control Structures and Functions** - Introduced basic programming structures like loops, conditionals, and functions to PHP, enabling more complex web applications.
-
-// 🚀 PHP 2.2 Series - Key Changes:
-1. **Introduced More Database Support** - Expanded support for other databases and refined its handling of MySQL interactions.
-2. **Basic Session Support** - Early introduction of session handling features for maintaining state across pages.
-3. **Object-Oriented Features (Basic)** - Object-oriented capabilities were limited but paved the way for future OOP features in PHP.
-
-?>
+<!---->
+<!--// Key Features of PHP 2.x Series:-->
+<!--1. **PHP/FI (Forms Interpreter)** - The initial release was primarily focused on form processing and server-side scripting for dynamic web pages.-->
+<!--2. **Database Interaction (MySQL)** - Introduced support for connecting to MySQL databases, making it the first step towards creating data-driven websites.-->
+<!--3. **Embedding PHP in HTML** - PHP 2.x allowed developers to embed PHP code within HTML, providing flexibility to build dynamic content on the fly.-->
+<!--4. **Basic File Handling** - PHP 2.x included file handling capabilities to read and write data to files.-->
+<!--5. **Control Structures and Functions** - Introduced basic programming structures like loops, conditionals, and functions to PHP, enabling more complex web applications.-->
+<!---->
+<!--// 🚀 PHP 2.2 Series - Key Changes:-->
+<!--1. **Introduced More Database Support** - Expanded support for other databases and refined its handling of MySQL interactions.-->
+<!--2. **Basic Session Support** - Early introduction of session handling features for maintaining state across pages.-->
+<!--3. **Object-Oriented Features (Basic)** - Object-oriented capabilities were limited but paved the way for future OOP features in PHP.-->
+<!---->
