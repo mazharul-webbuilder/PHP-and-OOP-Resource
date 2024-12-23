@@ -13,8 +13,8 @@ Mail::send(new Email());  // Sending an email using Symfony Mailer
 
 // 2) **Laravel Breeze for Authentication**
 //    * Laravel 9.x introduced Laravel Breeze as a simple and minimal authentication scaffold.
-composer require laravel/breeze --dev
-php artisan breeze:install
+//      composer require laravel/breeze --dev
+//      php artisan breeze:install
 
 // 3) **Full Text Search for Eloquent**
 //    * Laravel 9.x introduced full-text search for Eloquent models, allowing more efficient searches.
@@ -32,7 +32,7 @@ $posts = Post::where('created_at', '>', now())->get();
 
 // 6) **Controller Route Caching**
 //    * Laravel 9.x improved route caching for controller-based routes, making the application faster.
-php artisan route:cache
+//      php artisan route:cache
 
 // 7) **PHP 8.1+ Features**
 //    * Laravel 9.x required PHP 8.1+ and added support for features like enumerations, fibers, and intersection types.
@@ -47,7 +47,7 @@ Post::factory(10)->create();
 
 // 9) **Database Migrations Speed Improvements**
 //    * Laravel 9.x introduced speed improvements for database migrations, making them run faster and more efficiently.
-php artisan migrate
+//  php artisan migrate
 
 // 10) **Enhanced Test Coverage**
 //    * Laravel 9.x introduced improved testing features, including better coverage of HTTP testing and test assertions.

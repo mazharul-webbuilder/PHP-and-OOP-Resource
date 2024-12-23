@@ -20,12 +20,12 @@ $posts = Post::query()->join('categories', 'posts.category_id', '=', 'categories
 
 // 3) **Enhanced Artisan Commands**
 //    * New and improved Artisan commands, including `make:command`, `make:observer`, and `make:listener` with more advanced options.
-php artisan make:observer PostObserver
-php artisan make:listener UserEventListener
+//      php artisan make:observer PostObserver
+//      php artisan make:listener UserEventListener
 
 // 4) **Automatic Route Caching**
 //    * Laravel 10.x includes automatic route caching when deploying, improving performance in production environments.
-php artisan route:cache
+//      php artisan route:cache
 
 // 5) **Improved Eloquent Collections**
 //    * Laravel 10.x includes better handling and features for Eloquent collections, such as `when` and `filter` methods being more efficient.
@@ -53,9 +53,9 @@ SendEmail::dispatch()->onQueue('emails');
 
 // 9) **Enhanced Blade Directives**
 //    * New Blade directives, such as `@error` and `@isset`, were enhanced for more powerful templating capabilities.
-@isset($user)
-    <p>{{ $user->name }}</p>
-@endisset
+//@isset($user)
+//    <p>{{ $user->name }}</p>
+//@endisset
 
 // 10) **Improved Testing Features**
 //    * Laravel 10.x includes improvements for testing, including more powerful assertions, easier database seeding in tests, and better mock support.

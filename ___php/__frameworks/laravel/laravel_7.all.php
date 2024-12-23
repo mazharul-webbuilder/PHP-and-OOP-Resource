@@ -6,6 +6,7 @@
 
 // 1) **Blade Component Class Support**
 //    * Laravel 7.x allowed Blade components to be backed by classes, offering greater flexibility for handling component logic.
+
 use Illuminate\View\Component;
 
 class Alert extends Component {
@@ -24,8 +25,9 @@ class Alert extends Component {
 
 // 2) **Laravel Sanctum for API Authentication**
 //    * Laravel 7.x introduced Sanctum for simple token-based API authentication.
-composer require laravel/sanctum
-php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"
+
+//  composer require laravel/sanctum
+//  php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"
 
 // 3) **Custom Eloquent Casts**
 //    * Laravel 7.x introduced custom Eloquent casts to handle complex data transformations.
@@ -37,12 +39,13 @@ class User extends Eloquent {
 
 // 4) **HTTP Client Improvements**
 //    * Laravel 7.x introduced a new HTTP client based on Guzzle, offering a simpler API for making HTTP requests.
+
 $response = Http::get('https://api.example.com/posts');
 $data = $response->json();
 
 // 5) **Model Factory Classes**
 //    * Laravel 7.x replaced the old model factories with class-based factories for better flexibility and organization.
-use App\Models\User;
+use App\Models\User2;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class UserFactory extends Factory {
@@ -58,19 +61,19 @@ class UserFactory extends Factory {
 
 // 6) **Route Caching Improvements**
 //    * Laravel 7.x optimized route caching for faster application bootstrapping.
-php artisan route:cache
+//  php artisan route:cache
 
 // 7) **Improved CORS Support**
 //    * Laravel 7.x improved CORS (Cross-Origin Resource Sharing) handling for better API support.
-composer require barryvdh/laravel-cors
-// Configuration available in config/cors.php
+//      composer require barryvdh/laravel-cors
+//      Configuration available in config/cors.php
 
 // 8) **Blade "X" Directive for Components**
 //    * Laravel 7.x introduced the "X" directive for rendering Blade components in a more concise manner.
-    <x-alert type="success" message="Data saved successfully!"/>
+//    <x-alert type="success" message="Data saved successfully!"/>
 
 // 9) **Database Schema Dumping**
 //    * Laravel 7.x allowed schema dumping for databases, making it easier to manage schema in source control.
-php artisan schema:dump
+// php artisan schema:dump
 
 ?>

@@ -6,7 +6,7 @@
 
 // 1) **Artisan Command Line Interface (CLI)**
 //    * Laravel 3.x introduced the Artisan CLI, a powerful tool to automate common tasks like database migrations and seeding.
-php artisan migrate
+//      php artisan migrate
 
 // 2) **Resourceful Controllers**
 //    * Laravel 3.x introduced resource controllers to simplify CRUD operations.
@@ -40,7 +40,7 @@ class Post extends Eloquent {
 
 // 5) **Database Migrations**
 //    * Laravel 3.x introduced database migrations to define and modify database schema using code.
-php artisan migrate
+// php artisan migrate
 
 // 6) **Basic Authentication**
 //    * The authentication system was expanded with features like login, logout, and basic user registration.

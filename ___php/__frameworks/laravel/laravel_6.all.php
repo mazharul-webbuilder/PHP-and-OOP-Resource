@@ -11,8 +11,8 @@ echo "Laravel 6.x is an LTS version with long-term support.";
 
 // 2) **Laravel UI Package**
 //    * Laravel 6.x introduced the Laravel UI package, which separated frontend scaffolding (Bootstrap, Vue.js, React) into a separate package.
-composer require laravel/ui
-php artisan ui bootstrap --auth
+//      composer require laravel/ui
+//      php artisan ui bootstrap --auth
 
 // 3) **Blade Component Tags**
 //    * Laravel 6.x enhanced Blade templating with Blade components, making it easier to work with reusable UI components.
@@ -24,8 +24,9 @@ php artisan ui bootstrap --auth
 // 4) **Improved Job Middleware**
 //    * Laravel 6.x introduced middleware for jobs, allowing jobs to be filtered and controlled before execution.
 class ProcessJobMiddleware {
-    public function handle($job, $next) {
-        if (/* some condition */) {
+    public function handle($job, $next): void
+    {
+        if (true) {
             return;
         }
         $next($job);

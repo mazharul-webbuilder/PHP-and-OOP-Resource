@@ -6,7 +6,7 @@
 
 // 1) **Composer Dependency Management**
 //    * Laravel 4.x integrated Composer for managing packages and dependencies.
-composer install
+// composer install
 
 // 2) **Service Providers**
 //    * Service providers were introduced to handle application bootstrapping and configuration.
@@ -43,7 +43,7 @@ DB::table('users')->get();
 
 // 5) **Database Migrations and Seeding**
 //    * Laravel 4.x enhanced migrations and introduced seeding for populating the database with test data.
-php artisan db:seed
+// php artisan db:seed
 
 // 6) **RESTful Routing and Controllers**
 //    * Laravel 4.x expanded RESTful controllers with better routing and action handling.
@@ -51,6 +51,7 @@ Route::resource('post', 'PostController');
 
 // 7) **Queue System**
 //    * Laravel 4.x introduced the queue system to handle deferred tasks such as sending emails.
+$user = 'user model data';
 Queue::push('SendEmail', ['user' => $user]);
 
 // 8) **Advanced Validation**
