@@ -8,20 +8,30 @@
 //    * Laravel 3.x introduced the Artisan CLI, a powerful tool to automate common tasks like database migrations and seeding.
 //      php artisan migrate
 
+// Example usage of Artisan CLI:
+echo "Artisan CLI is now available in Laravel 3.x. Use commands like 'php artisan migrate' for migrations.";
+
+// -------------------------------------------------------------
 // 2) **Resourceful Controllers**
-//    * Laravel 3.x introduced resource controllers to simplify CRUD operations.
+// Laravel 3.x introduced resource controllers to simplify CRUD operations.
+
 Route::resource('user', 'UserController');
 
+// -------------------------------------------------------------
 // 3) **Eloquent ORM Enhancements**
-//    * Laravel 3.x enhanced Eloquent ORM, adding features like eager loading and relationships management.
+// Laravel 3.x enhanced Eloquent ORM, adding features like eager loading and relationships management.
+
 class Post extends Eloquent {
+    // Eloquent relationship: One Post has many Comments
     public function comments() {
         return $this->hasMany('Comment');
     }
 }
 
+// -------------------------------------------------------------
 // 4) **Blade Templating Engine**
-//    * Blade became more powerful with better control structures, and template inheritance.
+// Blade became more powerful with better control structures, and template inheritance.
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -30,34 +40,45 @@ class Post extends Eloquent {
 </head>
 <body>
 <h1>Welcome to Laravel 3.x</h1>
+
+{{-- Loop through posts using Blade's @foreach --}}
 @foreach($posts as $post)
 <p>{{ $post->title }}</p>
 @endforeach
+
 </body>
 </html>
 
 <?php
 
+// -------------------------------------------------------------
 // 5) **Database Migrations**
-//    * Laravel 3.x introduced database migrations to define and modify database schema using code.
+// Laravel 3.x introduced database migrations to define and modify database schema using code.
+// Example command to create a migration:
 // php artisan migrate
 
+// -------------------------------------------------------------
 // 6) **Basic Authentication**
-//    * The authentication system was expanded with features like login, logout, and basic user registration.
+// The authentication system was expanded with features like login, logout, and basic user registration.
+
 Route::get('/login', function() {
     return "Login Page";
 });
 
+// -------------------------------------------------------------
 // 7) **Middleware Support (Basic)**
-//    * Laravel 3.x began introducing middleware to handle HTTP request filtering.
+// Laravel 3.x began introducing middleware to handle HTTP request filtering.
+
 Route::filter('auth', function() {
     if (!Auth::check()) {
         return Redirect::to('login');
     }
 });
 
+// -------------------------------------------------------------
 // 8) **Advanced Validation System**
-//    * Laravel 3.x introduced a more advanced validation system, supporting custom rules and multiple rules per field.
+// Laravel 3.x introduced a more advanced validation system, supporting custom rules and multiple rules per field.
+
 $validator = Validator::make(
     ['username' => 'John'],
     ['username' => 'required|min:5|max:15']
