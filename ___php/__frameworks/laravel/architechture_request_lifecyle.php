@@ -2,9 +2,13 @@
 
 // Laravel Core Architecture and Request Lifecycle
 // -------------------------------------------------------------
-// Laravel's architecture is built around a modular and highly extensible structure. The framework ensures smooth handling of HTTP requests
-// through a robust lifecycle mechanism. Below is a detailed explanation of how the core architecture works, including the Request Lifecycle,
-// Service Container, Service Providers, Class Resolver, and other internal mechanisms.
+// Laravel architecture is built around a modular and highly extensible structure. The framework ensures smooth handling of HTTP requests
+// through a robust lifecycle mechanism.
+// Below is a detailed explanation of how the core architecture works, including the
+// Request Lifecycle,
+// Service Container,
+// Service Providers,
+// Class Resolver, and other internal mechanisms.
 
 // -------------------------------------------------------------
 // 1) **Request Lifecycle**
