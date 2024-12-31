@@ -246,7 +246,7 @@ $temp = $cloned->php->version;
 * If parent class change a method name that is override by child class, child class doesn't have know the parent method name changed,
 * With the #[Override] keyword, php will through an error
 */
-abstract class Parent
+abstract class Parent1
 {
     public function methodWithDefaultImplementation(): int
     {
@@ -254,7 +254,7 @@ abstract class Parent
     }
 }
 
-final class Child extends Parent
+final class Child extends Parent1
 {
     #[Override]
     public function methodWithDefaultImplementation(): int
