@@ -5,20 +5,20 @@
 //Key Features:
 
 //1)  Property Hooks
-    //* Property hooks allow developers to define custom behavior when accessing or
-    // modifying class properties. This feature provides greater control over property interactions, enabling more robust and encapsulated designs.
+//* Property hooks allow developers to define custom behavior when accessing or
+// modifying class properties. This feature provides greater control over property interactions, enabling more robust and encapsulated designs.
 class Locale
 {
     public string $languageCode;
 
     public string $countryCode
-    {
-        set (string $countryCode) {
-            $this->countryCode = strtoupper($countryCode);
+        {
+            set (string $countryCode) {
+                $this->countryCode = strtoupper($countryCode);
+            }
         }
-    }
 
-   public string $combinedCode{
+    public string $combinedCode {
         get => \sprintf("%s_%s", $this->languageCode, $this->countryCode);
 
         set(string $value) {
@@ -27,10 +27,10 @@ class Locale
     }
 
     public function __construct(string $languageCode, string $countryCode)
-{
-    $this->languageCode = $languageCode;
-    $this->countryCode = $countryCode;
-}
+    {
+        $this->languageCode = $languageCode;
+        $this->countryCode = $countryCode;
+    }
 }
 
 $brazilianPortuguese = new Locale('pt', 'br');
@@ -38,10 +38,9 @@ var_dump($brazilianPortuguese->countryCode); // BR
 var_dump($brazilianPortuguese->combinedCode); // pt_BR
 
 
-
 //2)  Asymmetric Visibility
-    //* Property hooks allow developers to define custom behavior when accessing or
-    // Asymmetric visibility allows different access levels for property getters and setters, providing more granular control over property accessibility.
+//* Property hooks allow developers to define custom behavior when accessing or
+// Asymmetric visibility allows different access levels for property getters and setters, providing more granular control over property accessibility.
 class PhpVersion
 {
     public private(set) string $version = '8.4';
@@ -56,7 +55,7 @@ class PhpVersion
 
 
 //3)  #[\Deprecated] Attribute
-    //* The new #[\Deprecated] attribute makes PHP’s existing deprecation mechanism available to user-defined functions, methods, and class constants.
+//* The new #[\Deprecated] attribute makes PHP’s existing deprecation mechanism available to user-defined functions, methods, and class constants.
 class PhpVersion
 {
     #[\Deprecated(
