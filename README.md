@@ -1,7 +1,7 @@
 
 # PHP & OOP Resource
 
-This repository is a comprehensive collection of PHP and Object-Oriented Programming (OOP) resources. It is designed to help developers, students, and interviewees quickly reference PHP features, syntax, version updates, and best practices. Use it as a pocket notebook or a quick refresher before interviews.
+This repository is a comprehensive collection of PHP and Object-Oriented Programming (OOP) resources. It is designed to help developers, students, and interviewees quickly reference PHP features, syntax, version updates, and best practices. Use it as a pocket notebook or a quick refresher before interviews .
 
 ## Features
 
