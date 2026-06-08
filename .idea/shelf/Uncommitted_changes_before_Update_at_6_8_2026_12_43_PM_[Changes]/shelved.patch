@@ -1,0 +1,61 @@
+Index: ___practices/playground/array.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/___practices/playground/array.php b/___practices/playground/array.php
+new file mode 100644
+--- /dev/null	(date 1736839363179)
++++ b/___practices/playground/array.php	(date 1736839363179)
+@@ -0,0 +1,50 @@
++<?php
++
++class ArrayReference
++{
++    private array $tasks = [];
++
++    public function getTasks(): array
++    {
++        return $this->tasks;
++    }
++
++    public function setTasks(mixed $tasks): void
++    {
++        $this->tasks[] = &$tasks;
++    }
++
++    public function getTask(int $value): array
++    {
++        return array_filter($this->tasks, function ($task) use ($value) {
++            return $task === $value;
++        });
++    }
++
++    public function updateTask(int $value): void
++    {
++        $task = $this->getTask($value);
++
++        var_dump($task[0] = 15);
++        echo '<br>';
++        var_dump($this->tasks);
++    }
++
++}
++
++
++$obj = new ArrayReference();
++var_dump($obj->getTasks());
++echo "<br>";
++
++$obj->setTasks(5);
++
++var_dump($obj->getTasks());
++
++echo "<br>";
++
++var_dump($obj->getTask(55));
++
++echo "<br>";
++
++$obj->updateTask( 5);
+\ No newline at end of file

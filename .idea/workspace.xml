@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3afbe468-203f-4780-9142-ea107ea7d52e" name="Changes" comment="php 8.3 new features practices" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="164" />
+    <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="PHP File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;mazharul-jatri&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:mazharul-jatri/PHP-and-OOP-Resource.git&quot;,
+    &quot;accountId&quot;: &quot;8007ded7-bc82-4ad9-8d18-9bdfe5ba4a60&quot;
+  }
+}</component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0000001963594" />
+      <entry key="S2" value="1.021066983770685" />
+      <entry key="S5" value="1.2312550267439384" />
+      <entry key="S10" value="1.6493975279688917" />
+      <entry key="S30" value="2.6808558331622834" />
+      <entry key="S60" value="3.295590383507731" />
+      <entry key="M2" value="4.375206142923563" />
+      <entry key="M5" value="8.901067830113131" />
+      <entry key="M10" value="15.928182133813388" />
+      <entry key="M15" value="20.8473463832271" />
+      <entry key="M30" value="28.549984192390955" />
+      <entry key="H1" value="34.00943339090987" />
+      <entry key="H2" value="37.28589134062303" />
+      <entry key="H4" value="39.084349640227295" />
+      <entry key="D1" value="40.67223239340235" />
+      <entry key="W1" value="40.952963284679534" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="8.160696930328918E-46" />
+      <entry key="MS500" value="9.601643825904486E-10" />
+      <entry key="S2" value="0.005703117166260475" />
+      <entry key="S5" value="0.16564513222871263" />
+      <entry key="S10" value="0.7109823247876459" />
+      <entry key="S30" value="2.4514466156345036" />
+      <entry key="S60" value="3.5278973864364804" />
+      <entry key="M2" value="4.861997097552806" />
+      <entry key="M5" value="9.285661120046068" />
+      <entry key="M10" value="15.661839612155594" />
+      <entry key="M15" value="20.1273891820596" />
+      <entry key="M30" value="27.228817111730503" />
+      <entry key="H1" value="32.34820434783276" />
+      <entry key="H2" value="35.452972421767285" />
+      <entry key="H4" value="37.16697294162061" />
+      <entry key="D1" value="38.685842557167625" />
+      <entry key="W1" value="38.954903206138276" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="0.9265880618903709" />
+      <entry key="MS500" value="0.9848665321209658" />
+      <entry key="S2" value="1.0147693822132469" />
+      <entry key="S5" value="1.3169570443107836" />
+      <entry key="S10" value="2.227916255340607" />
+      <entry key="S30" value="5.0204584838278965" />
+      <entry key="S60" value="6.749315938474585" />
+      <entry key="M2" value="9.18620994133175" />
+      <entry key="M5" value="18.145395422923805" />
+      <entry key="M10" value="31.552026325098836" />
+      <entry key="M15" value="40.94080222622748" />
+      <entry key="M30" value="55.7548322558595" />
+      <entry key="H1" value="66.34310297092308" />
+      <entry key="H2" value="72.73082080030247" />
+      <entry key="H4" value="76.24708683429459" />
+      <entry key="D1" value="79.35733733652978" />
+      <entry key="W1" value="79.90776031618078" />
+    </decayedShown>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="C:\laragon\bin\php\php-8.2.24-nts-Win32-vs16-x64\php.exe" />
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2qc3i9aLYLhcoQyqV9Ud13Cvzuz" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JavaScript Debug.index.php.executor": "Run",
+    "PHP Script.php_8.4.php.executor": "Run",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "master",
+    "git.auto.fetch.suggestion.counter": "1",
+    "ignore.virus.scanning.warn.message": "true",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "C:/laragon/www/MultiModalityControlPanel",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\PHP-and-OOP-Resource\___php\__frameworks\laravel" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="php_8.4.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/___practices/__version-wise/php_8.4.php">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHP Script.php_8.4.php" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-PS-261.25134.104" />
+        <option value="bundled-php-predefined-a98d8de5180a-6bbb74dbab74-com.jetbrains.php.sharedIndexes-PS-261.25134.104" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3afbe468-203f-4780-9142-ea107ea7d52e" name="Changes" comment="" />
+      <created>1734948160946</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1734948160946</updated>
+      <workItem from="1734948164039" duration="135000" />
+      <workItem from="1734948411148" duration="3168000" />
+      <workItem from="1735021847737" duration="3681000" />
+      <workItem from="1735027992359" duration="799000" />
+      <workItem from="1735471041584" duration="1961000" />
+      <workItem from="1735475310183" duration="1068000" />
+      <workItem from="1735619350791" duration="3038000" />
+      <workItem from="1735795237285" duration="3915000" />
+      <workItem from="1736837181364" duration="2675000" />
+      <workItem from="1736844074366" duration="18000" />
+      <workItem from="1780900889831" duration="67000" />
+      <workItem from="1780900999383" duration="2082000" />
+    </task>
+    <task id="LOCAL-00001" summary="php 8.4 new features practices">
+      <option name="closed" value="true" />
+      <created>1735797783493</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1735797783493</updated>
+    </task>
+    <task id="LOCAL-00002" summary="php 8.3 new features practices">
+      <option name="closed" value="true" />
+      <created>1736837371140</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1736837371140</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="php 8.4 new features practices" />
+    <MESSAGE value="php 8.3 new features practices" />
+    <option name="LAST_COMMIT_MESSAGE" value="php 8.3 new features practices" />
+  </component>
+</project>
