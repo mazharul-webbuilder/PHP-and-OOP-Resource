@@ -40,11 +40,6 @@ jewishtojd()	Converts a Jewish date to a Julian Day Count
 juliantojd()	Converts a Julian date to a Julian Day Count
 unixtojd()	Converts Unix timestamp to Julian Day Count
 
-what about them?
-
-why you didn't mention them?
-ChatGPT
-I apologize for not mentioning those specific calendar-related functions in my previous response. The functions you've listed are part of PHP's calendar extension, which provides support for various calendar systems. Here's a brief description of the functions you mentioned:
 
 cal_days_in_month(): Returns the number of days in a month for a specified year and calendar.
 
@@ -82,4 +77,3 @@ juliantojd(): Converts a Julian date to a Julian Day Count.
 
 unixtojd(): Converts Unix timestamp to Julian Day Count.
 
-These functions are used when working with different calendar systems and date representations. They can be especially useful if you need to handle non-Gregorian calendar systems or perform calendar conversions. Please refer to the PHP documentation for more details on how to use these functions.
