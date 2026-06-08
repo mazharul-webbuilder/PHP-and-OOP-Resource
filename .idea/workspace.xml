@@ -48,61 +48,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0000001963594" />
-      <entry key="S2" value="1.021066983770685" />
-      <entry key="S5" value="1.2312550267439384" />
-      <entry key="S10" value="1.6493975279688917" />
-      <entry key="S30" value="2.6808558331622834" />
-      <entry key="S60" value="3.295590383507731" />
-      <entry key="M2" value="4.375206142923563" />
-      <entry key="M5" value="8.901067830113131" />
-      <entry key="M10" value="15.928182133813388" />
-      <entry key="M15" value="20.8473463832271" />
-      <entry key="M30" value="28.549984192390955" />
-      <entry key="H1" value="34.00943339090987" />
-      <entry key="H2" value="37.28589134062303" />
-      <entry key="H4" value="39.084349640227295" />
-      <entry key="D1" value="40.67223239340235" />
-      <entry key="W1" value="40.952963284679534" />
+      <entry key="MS100" value="1.8426622731325781" />
+      <entry key="MS500" value="3.7915817398994696" />
+      <entry key="S2" value="4.647641750688324" />
+      <entry key="S5" value="4.854446925775845" />
+      <entry key="S10" value="4.926456238814721" />
+      <entry key="S30" value="5.042121630616715" />
+      <entry key="S60" value="5.507934428449712" />
+      <entry key="M2" value="6.7322570422937975" />
+      <entry key="M5" value="11.150813597548664" />
+      <entry key="M10" value="18.24214291086576" />
+      <entry key="M15" value="23.432593649192462" />
+      <entry key="M30" value="31.845825041598054" />
+      <entry key="H1" value="37.97884637200635" />
+      <entry key="H2" value="41.71662040834669" />
+      <entry key="H4" value="43.78484027948998" />
+      <entry key="D1" value="45.62011989803029" />
+      <entry key="W1" value="45.945463147886954" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="8.160696930328918E-46" />
-      <entry key="MS500" value="9.601643825904486E-10" />
-      <entry key="S2" value="0.005703117166260475" />
-      <entry key="S5" value="0.16564513222871263" />
-      <entry key="S10" value="0.7109823247876459" />
-      <entry key="S30" value="2.4514466156345036" />
-      <entry key="S60" value="3.5278973864364804" />
-      <entry key="M2" value="4.861997097552806" />
-      <entry key="M5" value="9.285661120046068" />
-      <entry key="M10" value="15.661839612155594" />
-      <entry key="M15" value="20.1273891820596" />
-      <entry key="M30" value="27.228817111730503" />
-      <entry key="H1" value="32.34820434783276" />
-      <entry key="H2" value="35.452972421767285" />
-      <entry key="H4" value="37.16697294162061" />
-      <entry key="D1" value="38.685842557167625" />
-      <entry key="W1" value="38.954903206138276" />
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="6.047666270459537E-106" />
+      <entry key="S2" value="5.0806917928621626E-27" />
+      <entry key="S5" value="3.9728567002969787E-11" />
+      <entry key="S10" value="1.1010851753277258E-5" />
+      <entry key="S30" value="0.0611049618497939" />
+      <entry key="S60" value="0.5569843121766929" />
+      <entry key="M2" value="1.9318713617983307" />
+      <entry key="M5" value="6.4191604876036905" />
+      <entry key="M10" value="13.021933525911434" />
+      <entry key="M15" value="17.796826999315133" />
+      <entry key="M30" value="25.603912962349956" />
+      <entry key="H1" value="31.368154010513422" />
+      <entry key="H2" value="34.91178421988112" />
+      <entry key="H4" value="36.882205847300696" />
+      <entry key="D1" value="38.63628337002061" />
+      <entry key="W1" value="38.94777016435199" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.9265880618903709" />
-      <entry key="MS500" value="0.9848665321209658" />
-      <entry key="S2" value="1.0147693822132469" />
-      <entry key="S5" value="1.3169570443107836" />
-      <entry key="S10" value="2.227916255340607" />
-      <entry key="S30" value="5.0204584838278965" />
-      <entry key="S60" value="6.749315938474585" />
-      <entry key="M2" value="9.18620994133175" />
-      <entry key="M5" value="18.145395422923805" />
-      <entry key="M10" value="31.552026325098836" />
-      <entry key="M15" value="40.94080222622748" />
-      <entry key="M30" value="55.7548322558595" />
-      <entry key="H1" value="66.34310297092308" />
-      <entry key="H2" value="72.73082080030247" />
-      <entry key="H4" value="76.24708683429459" />
-      <entry key="D1" value="79.35733733652978" />
-      <entry key="W1" value="79.90776031618078" />
+      <entry key="MS100" value="1.7817001719783447" />
+      <entry key="MS500" value="3.744614620162045" />
+      <entry key="S2" value="4.631043623998538" />
+      <entry key="S5" value="4.847313697859618" />
+      <entry key="S10" value="4.922811610633775" />
+      <entry key="S30" value="5.099201121272043" />
+      <entry key="S60" value="6.052587174274426" />
+      <entry key="M2" value="8.643555382144925" />
+      <entry key="M5" value="17.541275627826135" />
+      <entry key="M10" value="31.23242303594667" />
+      <entry key="M15" value="41.19937489301249" />
+      <entry key="M30" value="57.427178538579774" />
+      <entry key="H1" value="69.33289557661033" />
+      <entry key="H2" value="76.62047924320463" />
+      <entry key="H4" value="80.66284023356434" />
+      <entry key="D1" value="84.25566616572853" />
+      <entry key="W1" value="84.89312709515545" />
     </decayedShown>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="C:\laragon\bin\php\php-8.2.24-nts-Win32-vs16-x64\php.exe" />
@@ -120,12 +120,12 @@
     "PHP Script.php_8.4.php.executor": "Run",
     "RunOnceActivity.MCP Project settings loaded": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "WebServerToolWindowFactoryState": "false",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "master",
     "git.auto.fetch.suggestion.counter": "1",
     "ignore.virus.scanning.warn.message": "true",
     "junie.onboarding.icon.badge.shown": "true",
@@ -182,7 +182,7 @@
       <workItem from="1736837181364" duration="2675000" />
       <workItem from="1736844074366" duration="18000" />
       <workItem from="1780900889831" duration="67000" />
-      <workItem from="1780900999383" duration="2082000" />
+      <workItem from="1780900999383" duration="2534000" />
     </task>
     <task id="LOCAL-00001" summary="php 8.4 new features practices">
       <option name="closed" value="true" />

@@ -76,10 +76,5 @@ curl_errno(): Return the last cURL error number.
 
 curl_error(): Return a string containing the last cURL error.
 
-These are some of the network-related functions in PHP, and they are used for tasks such as opening network connections, reading and writing data over the network, working with URLs, DNS, and sockets, and using the cURL library for more advanced network requests.
-
-
-
-
-
-Re
+These are some of the network-related functions in PHP, and they are used for tasks such as opening network connections,
+reading and writing data over the network, working with URLs, DNS, and sockets, and using the cURL library for more advanced network requests.
