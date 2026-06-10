@@ -22,18 +22,23 @@
 // Handle any depth
 // Return the largest numeric value
 
-function maxNumberInsideNestedArrayRecursive($nums){
- $max = $nums[0];
- for($i=1; $i<count($nums); $i++){
-    if(is_array($nums[$i])){
-        $max = nestedArrysumRecursive($nums[$i]);
-    }else if($nums[$i] > $max){
-        $max = $nums[$i];
-    }
- }
 
- return $max;
+function maxNumberInsideNestedArrayRecursive($nums)
+{
+    $max = null;
+
+    foreach ($nums as $item) {
+        if (is_array($item)) {
+            $childMax = maxNumberInsideNestedArrayRecursive($item);
+            $max = ($max === null) ? $childMax : max($max, $childMax);
+        } else {
+            $max = ($max === null) ? $item : max($max, $item);
+        }
+    }
+
+    return $max;
 }
 
+echo maxNumberInsideNestedArrayRecursive([5, [10, [20]]]);
 
-echo nestedArrysumRecursive([5, [10, [20]]]);
+
